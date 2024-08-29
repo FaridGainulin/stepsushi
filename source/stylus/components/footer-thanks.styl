@@ -1,0 +1,41 @@
+.footer-thanks
+  &__container
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 6px
+    padding 20px 0
+    color: #fff
+    +above($breakpoints.sm)
+      justify-content space-between
+      flex-direction: row
+      padding 30px
+    +above($breakpoints.md)
+      padding 40px
+    +above($breakpoints.xxl)
+      padding 50px
+
+  &__logo
+    width 100px
+    height: auto
+    +above($breakpoints.sm)
+      width 150px
+    +above($breakpoints.md)
+      width 180px
+    +above($breakpoints.xxl)
+      width 200px
+
+  &__connection
+    display: flex
+    flex-direction: row
+    align-items: center
+    gap: 10px
+    +above($breakpoints.md)
+      gap: 20px
+
+  &__connection-icon
+    width 16px
+    height: 16px
+    +above($breakpoints.md)
+      width 24px
+      height: 24px

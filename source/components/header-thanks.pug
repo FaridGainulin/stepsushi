@@ -1,0 +1,13 @@
+header.header
+  .header__container
+    .header__brand
+      img.header__logo(src="images/header-logo.png" loading="lazy" width="131" height="94" alt="logo")
+      .header__text.font-s-12
+        .font-w-bold 5GMASTERS <br> Франшиза сервисного центра
+        | по ремонту и продаже мобильных <br> телефонов и аксессуаров
+    .header__connection
+      a(href="tel:+79990000000")
+        img.header__connection-icon(src="images/connection-icon.svg" loading="lazy" width="44" height="41" alt="icon")
+      include ../components/phone-number.pug
+      //- .header__call-me.font-w-bold.font-s-12(data-remodal-target="modal-form-call-me") Заказать звонок
+

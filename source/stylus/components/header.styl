@@ -1,0 +1,21 @@
+.header
+  &__container
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content space-between
+
+  &__text
+    display: none
+    +above($breakpoints.sm)
+      display: block
+
+  &__logo
+    width 90px
+    height: auto
+    +above($breakpoints.sm)
+      width 100px
+    +above($breakpoints.md)
+      width 110px
+    +above($breakpoints.xxl)
+      width 120px

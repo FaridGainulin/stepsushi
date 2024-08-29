@@ -1,0 +1,142 @@
+section.details-section
+  .wrapper
+    .details-section__container
+      img.details-section__img(src="images/details-section-img.png" loading="lazy" width="662" height="458" alt="image")
+      .details-section__top
+        .details-section__top-left
+          img.details-section__top-logo(src="images/details-section-top-logo.png" loading="lazy" width="740" height="106" alt="logo")
+          h2.details-section__top-title.font-w-bold.font-s-40.text-up
+            | Узнайте, где лучше 
+            br.no-br
+            | всего открыть 
+            br.no-br
+            | магазин 
+            span.color-grey-a6 в вашем городе
+        .details-section__top-right
+          .details-section__top-right-text.font-s-18.text-center
+            span.font-w-bold Укажите название города 
+            br.no-br
+            | и мы подготовим список удачных локаций
+          form.details-section__form(data-feedback-form)
+            input.input(type="text" name="city" autocomplete="off" placeholder="Название города")
+            input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+            button.btn(type="submit") ПРОВЕРИТЬ ЛОКАЦИЮ
+      .details-section__bottom
+        .details-section__bottom-left
+          .details-section__bottom-left-title.font-s-32.text-up
+            | Почувствуйте 
+            br.no-br
+            | себя владельцем 
+            br.no-br
+            span.font-w-bold 5GMASTERS
+          .details-section__bottom-left-block
+            .details-section__bottom-left-block-title.font-s-18.text-center
+              span.font-w-bold Получите 
+              br.no-br
+              | подробную презентацию 
+              br.no-br
+              | франшизы с цифрами и примерами
+            form.details-section__bottom-form(data-feedback-form)
+              input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+              input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+              button.btn(type="submit") СКАЧАТЬ ПРЕЗЕНТАЦИЮ
+        .details-section__bottom-right
+          .swiper-details
+            .details-section__bottom-right-cards.swiper-wrapper
+              .details-section__bottom-right-card.swiper-slide
+                img.details-section__card-icon(src="images/details-section-card-icon.png" loading="lazy" width="82" height="84" alt="icon")
+                .font-s-22
+                  span.font-w-bold Повышенная 
+                  br.no-br
+                  span.font-w-bold гарантия 
+                  | на ремонт 
+                  br.no-br
+                  | от 4 до 12 месяцев
+              .details-section__bottom-right-card.swiper-slide
+                img.details-section__card-icon(src="images/details-section-card-icon.png" loading="lazy" width="82" height="84" alt="icon")
+                .font-s-22
+                  span.font-w-bold Современное 
+                  br.no-br
+                  span.font-w-bold оборудование 
+                  | и 
+                  br.no-br
+                  | оригинальные 
+                  br.no-br
+                  | запчасти
+              .details-section__bottom-right-card.swiper-slide
+                img.details-section__card-icon(src="images/details-section-card-icon.png" loading="lazy" width="82" height="84" alt="icon")
+                .font-s-22
+                  | Оплата только 
+                  br.no-br
+                  | после 
+                  span.font-w-bold успешного 
+                  br.no-br
+                  span.font-w-bold ремонта
+              .details-section__bottom-right-card.swiper-slide
+                img.details-section__card-icon(src="images/details-section-card-icon.png" loading="lazy" width="82" height="84" alt="icon")
+                .font-s-22
+                  span.font-w-bold Бесплатная 
+                  br.no-br
+                  span.font-w-bold доставка 
+                  br.no-br
+                  | и диагностика
+              .details-section__bottom-right-card.swiper-slide
+                img.details-section__card-icon(src="images/details-section-card-icon.png" loading="lazy" width="82" height="84" alt="icon")
+                .font-s-22
+                  span.font-w-bold Опытные мастера,
+                  br.no-br
+                  | которые работают 
+                  br.no-br
+                  | только 
+                  br.no-br
+                  | в своем сегменте
+              .details-section__bottom-right-card.swiper-slide
+                img.details-section__card-icon(src="images/details-section-card-icon.png" loading="lazy" width="82" height="84" alt="icon")
+                .font-s-22
+                  span.font-w-bold Минимальные 
+                  br.no-br
+                  span.font-w-bold цены 
+                  | на ремонт 
+                  br.no-br
+                  | и товары
+            .details-pagination.swiper-progress-details
+      //- img.details-section__cloud-icon(src="images/cloud.svg" loading="lazy" width="1177" height="393" alt="icon")
+      //- .details-section__box
+      //-   .details-section__title.font-w-a-regular.font-s-50
+      //-     | Почувствуйте 
+      //-     br.no-br
+      //-     | себя владельцем 
+      //-     br.no-br
+      //-     | AKATSUKI SUSHI
+      //-   .details-section__sub-title.font-w-regular.font-s-24
+      //-     | Запишитесь на тест-драйв франшизы и вы узнаете:
+      //-   .swiper-details
+      //-     .details-section__items.swiper-wrapper
+      //-       .details-section__item.swiper-slide
+      //-         .details-section__item-num.font-w-semi-bold.font-s-18 01
+      //-         .font-s-18 Как вести документооборот
+      //-       .details-section__item.border-line-item.swiper-slide
+      //-         .details-section__item-num.font-w-semi-bold.font-s-18 02
+      //-         .font-s-18 Как работать с поставщиками
+      //-       .details-section__item.swiper-slide
+      //-         .details-section__item-num.font-w-semi-bold.font-s-18 03
+      //-         .font-s-18 Как контролировать качество продукции
+      //-       .details-section__item.border-line-item.swiper-slide
+      //-         .details-section__item-num.font-w-semi-bold.font-s-18 04
+      //-         .font-s-18 Как расширять клиентскую базу
+      //-       .details-section__item.swiper-slide
+      //-         .details-section__item-num.font-w-semi-bold.font-s-18 05
+      //-         .font-s-18 Как избежать ошибок на старте
+      //-       .details-section__item.border-line-item.swiper-slide
+      //-         .details-section__item-num.font-w-semi-bold.font-s-18 06
+      //-         .font-s-18 Как всегда быть в курсе новинок рынка
+      //-       .details-section__item.swiper-slide
+      //-         .details-section__item-num.font-w-semi-bold.font-s-18 07
+      //-         .font-s-18 Как и из чего будет формироваться ваша прибыль
+      //-     .details-pagination.swiper-progress-details
+      //-   form.details-section__form(data-feedback-form)
+      //-     input.input.main-item(type="text" name="name" autocomplete="off" placeholder="Имя")
+      //-     input.input.main-item(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+      //-     button.btn.main-item-btn(type="submit") Скачать презентацию
+      //- img.details-section__img(src="images/details-section-img.jpg" loading="lazy" width="1120" height="1658" alt="image")
+

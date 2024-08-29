@@ -1,0 +1,53 @@
+.about-section
+  background-color #020202
+  width 100%
+  max-width: 380px
+  margin 0 auto
+  height: auto
+  border-radius: 30px
+  +above($breakpoints.sm)
+    background-image: url('../images/about-section-bg.jpg')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    max-width: 800px
+    border-radius: 50px
+  +above($breakpoints.md)
+    max-width: 1100px
+    border-radius: 80px
+  +above($breakpoints.xxl)
+    max-width: 1300px
+    border-radius: 110px
+  +above($breakpoints.xxxxl)
+    max-width 1800px
+    border-radius: 150px
+
+  &__container
+    position relative
+    color: #fff
+    padding 20px 0 0 0
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: start
+      padding 50px 0 50px 0
+    +above($breakpoints.md)
+      padding 90px 0 90px 0
+    +above($breakpoints.xxl)
+      padding 130px 0 129px 0
+
+  &__title
+    padding 0 0 20px 0
+    +above($breakpoints.sm)
+      padding 0 0 30px 0
+    +above($breakpoints.md)
+      padding 0 0 40px 0
+    +above($breakpoints.xxl)
+      padding 0 0 50px 0
+
+  &__img
+    width 300px
+    height: auto
+    margin 5px auto 0
+    +above($breakpoints.sm)
+      display: none
+

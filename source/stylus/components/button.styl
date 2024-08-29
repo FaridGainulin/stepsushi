@@ -1,0 +1,55 @@
+.btn
+  height: 40px
+  width 100%
+  user-select: none
+  position: relative
+  display: flex;
+  justify-content: center
+  align-items: center
+  overflow: hidden
+  color: #fff
+  border-radius: 50px
+  // border: 3px solid #fff;
+  // text-transform: uppercase
+  background: linear-gradient(147deg, #ff3228 0%, #ff8b0e 100%)
+  font-family: "FuturaPT-Book"
+  font-weight: 400
+  font-size: 13px
+  line-height: 140%
+  transition transform 0.5s, top 0.8s
+  +above($breakpoints.sm)
+    font-size: 14px;
+    height: 45px;
+  +above($breakpoints.md)
+    height: 45px;
+    font-size: 16px;
+  +above($breakpoints.xxl)
+    font-size: 19px;
+    height: 49px
+
+  &:hover
+    transform: scale(1.02)
+
+  &:active
+    top: 3px
+
+  &::before
+    content: ""
+    position: absolute
+    top: 0;
+    height: 100%;
+    width: 36px;
+    transform: skewX(-45deg)
+    left: -150%
+    pointer-events: none
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+    animation: flareAnimation 4s infinite ease-in;
+    vendord = official
+    @keyframes flareAnimation
+      0%
+          left: -150%
+      100% 
+          left: 250%
+
+  &--secondary
+    background: #000

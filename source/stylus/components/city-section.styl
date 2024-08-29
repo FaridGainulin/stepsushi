@@ -1,0 +1,98 @@
+.city-section
+  background-image: url('../images/city-section-bg.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  background-color #020202
+  width 100%
+  max-width: 380px
+  margin 0 auto
+  height: auto
+  border-radius: 30px
+  +above($breakpoints.sm)
+    max-width: 800px
+    border-radius: 50px
+  +above($breakpoints.md)
+    max-width: 1100px
+    border-radius: 80px
+  +above($breakpoints.xxl)
+    max-width: 1300px
+    border-radius: 110px
+  +above($breakpoints.xxxxl)
+    max-width 1800px
+    border-radius: 150px
+
+  &__container
+    position relative
+    color: #fff
+    padding 20px 0 20px 0
+    +above($breakpoints.sm)
+      padding 50px 0 50px 0
+    +above($breakpoints.md)
+      padding 90px 0 90px 0
+    +above($breakpoints.xxl)
+      padding 120px 0 120px 0
+    +above($breakpoints.xxxxl)
+      padding 130px 0 130px 0
+
+  &__box
+    +above($breakpoints.sm)
+      margin-left 290px
+    +above($breakpoints.md)
+      margin-left 390px
+    +above($breakpoints.xxl)
+      margin-left 510px
+
+  &__title,
+  &__sub-title
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: start
+
+  &__sub-title
+    padding 20px 0 20px 0
+    +above($breakpoints.sm)
+      padding 30px 0 50px 0
+    +above($breakpoints.md)
+      padding 35px 0 60px 0
+    +above($breakpoints.xxl)
+      padding 40px 0 70px 0
+
+  &__bottom
+    text-align: center
+    border-radius: 30px
+    padding 20px
+    border: 1px solid #fff
+    background: rgba(0, 0, 0, 0.5)
+    +above($breakpoints.sm)
+      border-radius: 35px
+      padding 30px 30px 30px 30px
+    +above($breakpoints.md)
+      border-radius: 40px
+      padding 35px 35px 35px 35px
+    +above($breakpoints.xxl)
+      width 625px
+      border-radius: 50px
+      padding 40px 40px 39px 40px
+
+  &__form
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 6px
+    padding-top 20px
+    +above($breakpoints.sm)
+      flex-direction: row
+      flex-wrap: wrap
+    +above($breakpoints.md)
+      padding-top 30px
+      gap: 10px
+
+.city-item
+  width 260px !important
+  +above($breakpoints.sm)
+    width 180px !important
+  +above($breakpoints.md)
+    width 240px !important
+  +above($breakpoints.xxl)
+    width 263px !important

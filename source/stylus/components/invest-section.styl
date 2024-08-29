@@ -1,0 +1,123 @@
+.invest-section
+  // background-image: url('../images/invest-section-bg.jpg')
+  // background-repeat: no-repeat
+  // background-position: center
+  // background-size: cover
+  background-color #fff
+
+  &__container
+    text-align: center
+    position relative
+
+  &__sub-title
+    padding 15px 0 15px 0
+    +above($breakpoints.sm)
+      padding 30px 0 40px 0
+    +above($breakpoints.md)
+      padding 40px 0 50px 0
+    +above($breakpoints.xxl)
+      line-height 140% !important
+      padding 50px 0 60px 0
+
+  &__cards
+    +above($breakpoints.sm)
+      display: flex
+      flex-direction: row
+      justify-content center
+      gap: 10px
+    +above($breakpoints.md)
+      gap: 20px
+
+  &__card
+    position relative
+    width 260px !important
+    display: flex
+    flex-direction: column
+    gap: 30px
+    +above($breakpoints.sm)
+      gap: 40px
+      width 235px !important
+    +above($breakpoints.md)
+      gap: 50px
+      width 308px !important
+    +above($breakpoints.xxl)
+      width 386px !important
+      gap: 60px
+
+  &__card-header
+    color: #fff
+    background-color #000
+    display: flex
+    justify-content center
+    align-items: center
+    border-radius: 30px
+    height: 50px
+    +above($breakpoints.sm)
+      height: 80px
+      border-radius: 35px
+    +above($breakpoints.md)
+      height: 100px
+      border-radius: 40px
+    +above($breakpoints.xxl)
+      border-radius: 50px
+      height: 142px
+
+  &__card-body
+    background-color #000
+    border-radius: 30px
+    padding 20px 20px 20px 20px
+    +above($breakpoints.sm)
+      border-radius: 35px
+      padding 30px 20px 20px 20px
+    +above($breakpoints.md)
+      border-radius: 40px
+      padding 40px 30px 30px 30px
+    +above($breakpoints.xxl)
+      border-radius: 50px
+      padding 50px 40px 39px 40px
+
+  &__form
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 6px
+    +above($breakpoints.md)
+      gap: 10px
+
+  &__img-line-1
+    position: absolute
+    top: 40px;
+    left: 30px;
+    width: auto;
+    height: 50px;
+    +above($breakpoints.sm)
+      top: 65px;
+      left: 30px;
+      height: 70px;
+    +above($breakpoints.md)
+      top: 80px;
+      left: 38px;
+      height: 90px;
+    +above($breakpoints.xxl)
+      top: 117px
+      left: 50px
+      height: 110px
+
+  &__img-line-2
+    position: absolute
+    top: 40px
+    right: 30px
+    width : auto
+    height: 50px
+    +above($breakpoints.sm)
+      top: 65px
+      right: 30px
+      height: 70px
+    +above($breakpoints.md)
+      top: 80px
+      right: 38px
+      height: 90px
+    +above($breakpoints.xxl)
+      top: 117px
+      right: 50px
+      height: 110px
